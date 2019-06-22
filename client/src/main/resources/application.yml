@@ -7,7 +7,7 @@ server:
   port: 8763
 spring:
   application:
-    name: servie-hello
+    name: service-hello
 eureka:
   client:
     service-url:

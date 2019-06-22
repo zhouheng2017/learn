@@ -18,9 +18,12 @@ public class TestController {
     @Value("${zhouheng.name}")
     private String name;
 
-    @RequestMapping("/test")
-    public String test(){
+    @Value("${server.port}")
+    private String port;
+
+    @RequestMapping("/hi")
+    public String test(String name) {
         System.out.println("访问了8762。。。。。。");
-        return name;
+        return "this.nameHi ---->" + port + name;
     }
 }
