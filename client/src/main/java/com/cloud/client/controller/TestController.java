@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @Date: 2019-06-22
  * @Time: 15:39
  */
+
 @RestController
 @RequestMapping("/")
 public class TestController {
@@ -23,7 +24,7 @@ public class TestController {
 
     @RequestMapping("/hi")
     public String test(String name) {
-        System.out.println("访问了8762。。。。。。");
+        System.out.println("访问了8762。。。。。。" +port);
         return "this.nameHi ---->" + port + name;
     }
 }
