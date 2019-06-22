@@ -1,0 +1,8 @@
+#设置端口8761
+server:
+  port: 8761
+
+#设置名称
+eureka:
+  instance:
+    namespace:
